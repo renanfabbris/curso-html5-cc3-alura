@@ -26,7 +26,7 @@ p{
     
 }
 
-.citacao-bio {
+.citacao-bio-fiat, .citacao-bio-petrobras {
 	background-color: #D9E5E3;
 	border: 10px solid #C2CCCA;
 	width: 250px;
@@ -34,17 +34,33 @@ p{
 	margin: 20px 40px;
 }
 
+.citacao-bio-fiat{
+    float: right;
+}
+
+.citacao-bio-petrobras{
+    float: left;
+}
+
 .navegacao-site {
 	text-align: center;
 	background-color: #3C1D3D;
     color: #F2FFFC;
+    clear: right;
+    box-sizing: border-box;
     
 }
 
 
 .rodape-pagina {
 	background-color: #000;
-	color: #F2FFFC;
+    color: #F2FFFC;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 main a {
@@ -56,7 +72,7 @@ main a {
 	font-family: "Open Sans Condensed", sans-serif;
 }
 
-.citacao-bio, .navegacao-site, .rodape-pagina {
+.citacao-bio-fiat, .citacao-bio-petrobras , .navegacao-site, .rodape-pagina {
     padding: 20px;
 }
 
@@ -115,6 +131,7 @@ em {
 }
 
 .icones-redes-sociais a{
+   
     text-indent: -99999px;
     width: 40px;
     height: 40px;
@@ -123,4 +140,40 @@ em {
 
 nav{
     text-transform: uppercase;
+}
+
+h2{
+    clear: both;
+}
+
+.minha-foto, .navegacao-site{
+    border-left:10px solid #000;
+    border-top:10px solid #000;
+    border-block-end:10px solid #000;
+    float: right;
+    width: 15%;
+    box-sizing: border-box;
+    
+    
+}
+
+main{
+    float: left;
+    width: 85%;
+}
+
+.minha-foto{
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navegacao-site{
+    position: relative;
+    top: 300px;
+}
+
+main {
+    padding-bottom: 80px;
 }
